@@ -11,8 +11,8 @@ useHead({
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'Portfolio | Fullstack Developer - Laravel, Vue & Golang'
+const description = 'Software Engineer spesialis Laravel, Vue.js, dan Golang. Berfokus pada pembangunan sistem backend performa tinggi dan dashboard interaktif.'
 
 useSeoMeta({
   title,
@@ -28,18 +28,23 @@ useSeoMeta({
   <UApp>
     <UHeader>
       <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
+        <NuxtLink
+          to="/"
+          class="flex items-center gap-2"
+        >
+          <UIcon
+            name="i-logos-nuxt-icon"
+            class="w-6 h-6"
+          />
+          <span class="font-bold text-xl tracking-tight">FaizHid</span>
         </NuxtLink>
-
-        <TemplateMenu />
       </template>
 
       <template #right>
         <UColorModeButton />
 
         <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
+          to="https://github.com/hid0"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
@@ -58,7 +63,7 @@ useSeoMeta({
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          Built with Nuxt UI • &copy; {{ new Date().getFullYear() }}
         </p>
       </template>
 
